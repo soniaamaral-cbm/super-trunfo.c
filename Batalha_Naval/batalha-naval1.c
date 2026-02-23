@@ -136,9 +136,9 @@ int posicionarNavio(int tab[TAM][TAM], int navio[NAVIO_TAM],
 /* Cone apontando para baixo (5x5):
    linha 0: 00100
    linha 1: 01110
-   linha 2: 11111
-   linha 3: 11111  (mantemos tamanho razoável, cone "cheio" após expandir)
-   linha 4: 11111
+   linha 2: 11111 (mantemos tamanho razoável, cone "cheio" após expandir)
+   linha 3: 11111 
+   linha 4: 11111 
    Regra usada:
    - para cada linha r, o "raio" cresce: raio = r
    - marca colunas entre (centro - raio) e (centro + raio)
@@ -295,7 +295,7 @@ int main() {
        (MESTRE) Aplicar as habilidades no tabuleiro
        Define pontos de origem (linha/coluna) no tabuleiro
     ===================================================== */
-    int origemConeLinha = 2, origemConeCol = 6;
+    int origemConeLinha = 2, origemConeCol = 7;
     int origemCruzLinha = 7, origemCruzCol = 2;
     int origemOctLinha  = 4, origemOctCol  = 4;
 
